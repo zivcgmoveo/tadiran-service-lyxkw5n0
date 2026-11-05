@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>שירות ואחריות | תדיראן</title>
+<!-- Compatibility check (per Tadiran integration guidelines): the live site's stylesheets, loaded here so the
+     preview renders exactly as it will inside the site. The live site already loads these - do not ship them. -->
+<link rel="stylesheet" href="https://www.tadiran-group.co.il/wp-content/themes/tadiran/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.tadiran-group.co.il/wp-content/themes/tadiran/assets/scss/general.css">
+<link rel="stylesheet" href="https://www.tadiran-group.co.il/wp-content/themes/tadiran/assets/scss/main.css">
+<link rel="stylesheet" href="https://www.tadiran-group.co.il/wp-content/themes/tadiran/assets/scss/header-megamenu.css">
+<link rel="stylesheet" href="https://www.tadiran-group.co.il/wp-content/themes/tadiran/style-rtl.css">
+<!-- Deliverable -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<!-- Preview only -->
+<link rel="stylesheet" href="preview/preview.css">
+</head>
+<body>
+
+<!-- PREVIEW ONLY: mock of the Tadiran site header (the real one comes from the site) -->
+<header class="gh">
+  <div class="gh-in">
+    <a class="gh-logo" href="https://www.tadiran-group.co.il/" aria-label="תדיראן - דף הבית"><img src="assets/logo-sadaf.svg" width="29" height="29" alt=""></a>
+    <nav class="gh-nav" aria-label="ניווט ראשי">
+      <a href="https://www.tadiran-group.co.il/advisor/">התאמת מזגן</a>
+      <a href="https://www.tadiran-group.co.il/catalog-lobby/">מיזוג אוויר</a>
+      <a class="keep" href="https://www.tadiran-group.co.il/download-app/"><img src="assets/my-tadiran.png" width="21" height="20" alt="">MY TADIRAN</a>
+      <a href="https://www.tadiran-group.co.il/water-heating-2/">חימום מים</a>
+      <a href="https://www.tadiran-group.co.il/articles-and-tips/">מדריכים ותוכן</a>
+      <a href="https://www.tadiran-group.co.il/installers-page/">מידע מקצועי</a>
+      <a href="https://www.tadiran-group.co.il/careers/">קריירה</a>
+    </nav>
+    <div class="gh-tools">
+      <button class="gh-icon" type="button" aria-label="חיפוש" data-focus-search><img src="assets/icon-search.svg" width="24" height="24" alt=""></button>
+      <button class="gh-icon" type="button" aria-label="עגלת קניות"><img src="assets/icon-cart.svg" width="24" height="24" alt=""></button>
+      <a class="gh-pill" href="#" aria-current="page">שירות ואחריות</a>
+      <button class="gh-burger" type="button" aria-label="תפריט"><svg class="icon"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- ======== DELIVERABLE: embed this block in the Tadiran page (plus css/styles.css + js/main.js) ======== -->
+<div id="tadiran-service-page" lang="he" dir="rtl">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+  <symbol id="i-sms" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a6 6 0 0 1-12 0V8z"/></symbol>
+  <symbol id="i-wind" viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="i-check-c" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-thermo" viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M16 16l-4-4-4 4M12 12v9"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></symbol>
+</svg>
+
+  <!-- Warranty activation flow v2 (behaviour from Figma "Website" 5284:29984, styled to this page) -->
+  <section class="flow2" id="flow2" aria-labelledby="f2-title">
+    <div class="wrap-wide">
+      <div class="flow-top">
+        <button class="flow-back" type="button" data-exit2><svg class="icon"><use href="#i-back"/></svg>חזרה לשירות ואחריות</button>
+        <nav class="flow-crumbs" aria-label="פירורי לחם">ראשי / שירות ואחריות / <b>הפעלת אחריות</b></nav>
+      </div>
+      <header class="f2-hero">
+        <h1 id="f2-title">הפעלת אחריות</h1>
+        <p><span id="f2-type">מזגן</span> · <button class="change" type="button" data-exit2="tsw-warranty">החלפת סוג מוצר</button></p>
+      </header>
+
+      <ol class="ps" id="ps" aria-label="שלבי הפעלת האחריות">
+        <li class="cur"><span class="ps-dot"><b>1</b><svg class="icon"><use href="#i-check-c"/></svg></span><span class="ps-l">העלאת חשבונית</span></li>
+        <li><span class="ps-dot"><b>2</b><svg class="icon"><use href="#i-check-c"/></svg></span><span class="ps-l">הזנת פרטים</span></li>
+        <li><span class="ps-dot"><b>3</b><svg class="icon"><use href="#i-check-c"/></svg></span><span class="ps-l">מיקום <span class="noun2">המזגן</span></span></li>
+        <li><span class="ps-dot"><b>4</b><svg class="icon"><use href="#i-check-c"/></svg></span><span class="ps-l">בחירת אחריות</span></li>
+      </ol>
+
+      <form class="f2-card" id="f2" novalidate>
+        <!-- Step 1: invoice + serials -->
+        <div class="f2s on" data-s="1">
+          <h2>העלה את חשבונית הרכישה והזן את המספר הסיריאלי כדי להתחיל בהפעלת האחריות</h2>
+          <button class="hint-link" type="button" data-modal="m-serial"><svg class="icon"><use href="#i-help"/></svg>היכן נמצא המספר הסיריאלי?</button>
+          <label class="drop f2-drop" id="f2-drop"><input id="f2-file" type="file" accept=".pdf,.jpg,.jpeg,.png" class="vh"><svg class="icon"><use href="#i-upload"/></svg><b>גרור ושחרר את החשבונית כאן, או <span>לחץ לבחירת קובץ</span></b><small>PDF, JPG, או PNG • עד 10MB</small></label>
+          <div class="file-row" id="f2-file-row"><svg class="icon ok"><use href="#i-check-c"/></svg><span class="fn" id="f2-file-name"></span><button class="rm" type="button" id="f2-file-rm" aria-label="הסרת הקובץ"><svg class="icon"><use href="#i-x"/></svg></button></div>
+          <p class="f2-err" id="f2-file-err" hidden></p>
+          <div class="serials" id="serials"></div>
+          <button class="add-serial" type="button" id="add-serial"><svg class="icon"><use href="#i-plus"/></svg>הוספת סריאלי נוסף</button>
+          <div class="f2-nav"><button class="tsw-btn tsw-btn-primary btn-lg f2-next" type="submit" disabled>המשך לאימות</button></div>
+        </div>
+
+        <!-- Step 2: personal + purchase details -->
+        <div class="f2s" data-s="2">
+          <h2>הזנת פרטים אישיים ופרטי רכישה</h2>
+          <p class="f2-sub">אנא מלאו את הפרטים כדי שנוכל להפעיל את האחריות של <span class="noun2">המזגן</span> שלכם</p>
+          <div class="g3">
+            <div class="f"><label for="f2-fn"><span class="req">*</span>שם פרטי</label><input id="f2-fn" type="text" autocomplete="given-name" data-v="he" required><span class="err">יש למלא שם פרטי בעברית בלבד</span></div>
+            <div class="f"><label for="f2-ln"><span class="req">*</span>שם משפחה</label><input id="f2-ln" type="text" autocomplete="family-name" data-v="he" required><span class="err">יש למלא שם משפחה בעברית בלבד</span></div>
+            <div class="f"><label for="f2-date"><span class="req">*</span>תאריך רכישת <span class="noun2">המזגן</span></label><span class="tdate"><input id="f2-date" type="text" placeholder="DD/MM/YYYY" readonly required maxlength="10" aria-haspopup="dialog"></span><span class="err">יש לבחור תאריך רכישה</span></div>
+          </div>
+          <div class="g2">
+            <div class="f"><label for="f2-ph"><span class="req">*</span>מספר טלפון</label><input id="f2-ph" class="ltr" type="tel" autocomplete="tel" data-v="mobile" required><span class="err">יש למלא מספר טלפון נייד תקין</span></div>
+            <div class="f"><label for="f2-em"><span class="req">*</span>כתובת מייל</label><input id="f2-em" class="ltr" type="email" autocomplete="email" data-v="email" required><span class="err">יש למלא כתובת מייל תקינה</span></div>
+            <div class="f"><label for="f2-where">היכן נרכש <span class="noun2">המזגן</span>?</label><input id="f2-where" type="text"></div>
+            <div class="f"><label for="f2-wph">מספר טלפון של מקום הרכישה/מתקין</label><input id="f2-wph" class="ltr" type="tel" data-v="phone"><span class="err">יש למלא מספר טלפון תקין</span></div>
+          </div>
+          <label class="cb"><input type="checkbox" id="f2-biz">לקוח עסקי</label>
+          <label class="cb"><input type="checkbox" id="f2-mkt">אני רוצה לקבל עדכונים, הצעות והטבות במייל, במסרונים או בוואטסאפ מתדיראן וחברות הקשורות אליה</label>
+          <p class="fine">שנה ראשונה על פי דין. מסלולי האחריות רשאים להשתנות מעת לעת. יש לעיין ב<a href="https://www.tadiran-group.co.il/warranty-table-info/" target="_blank" rel="noopener">טבלת האחריות</a>.<span class="ac-only2"><br>עבור מזגני מולטי INV יש לעדכן אחריות למס' הסיריאלי של היחידה החיצונית בלבד (ללא תלות בכמות המאיידים).</span></p>
+          <div class="f2-nav"><button class="tsw-btn tsw-btn-primary btn-lg f2-next" type="submit">המשך</button><button class="f2-prev" type="button">חזור לשלב הקודם</button></div>
+        </div>
+
+        <!-- Step 3: installation address -->
+        <div class="f2s" data-s="3">
+          <h2>היכן מותקן <span class="noun2">המזגן</span>?</h2>
+          <div class="g6">
+            <div class="f w2"><label for="f2-city"><span class="req">*</span>עיר</label><div class="tac has-arrow" data-list="cities"><input id="f2-city" type="text" autocomplete="off" required role="combobox" aria-autocomplete="list" aria-expanded="false"><ul class="tac-list" role="listbox"></ul></div><span class="err">יש לבחור עיר מהרשימה</span></div>
+            <div class="f w2"><label for="f2-street"><span class="req">*</span>רחוב</label><div class="tac has-arrow" data-list="streets"><input id="f2-street" type="text" autocomplete="off" required role="combobox" aria-autocomplete="list" aria-expanded="false"><ul class="tac-list" role="listbox"></ul></div><span class="err">יש לבחור רחוב מהרשימה</span></div>
+            <div class="f"><label for="f2-ent"><span class="req">*</span>כניסה</label><input id="f2-ent" type="text" required><span class="err">שדה חובה</span></div>
+            <div class="f"><label for="f2-floor"><span class="req">*</span>קומה</label><input id="f2-floor" type="text" inputmode="numeric" required><span class="err">שדה חובה</span></div>
+            <div class="f"><label for="f2-apt"><span class="req">*</span>מספר דירה</label><input id="f2-apt" type="text" inputmode="numeric" required><span class="err">שדה חובה</span></div>
+            <div class="f"><label for="f2-house"><span class="req">*</span>מספר בית</label><input id="f2-house" type="text" inputmode="numeric" required><span class="err">שדה חובה</span></div>
+          </div>
+          <label class="cb"><input type="checkbox" id="f2-free">לא מצאתי את הכתובת, אני רוצה להקליד אותה</label>
+          <div class="f2-nav"><button class="tsw-btn tsw-btn-primary btn-lg f2-next" type="submit">המשך</button><button class="f2-prev" type="button">חזור לשלב הקודם</button></div>
+        </div>
+
+        <!-- Step 4: choose a warranty plan per unit -->
+        <div class="f2s" data-s="4">
+          <h2>בחר את תכניות האחריות המתאימות לך</h2>
+          <div class="units" id="units"></div>
+          <label class="cb"><input type="checkbox" id="f2-terms"><span><span class="req">*</span>אני מאשר/ת את <a href="https://www.tadiran-group.co.il/privacy-policy/" target="_blank" rel="noopener">מדיניות הפרטיות</a> ואת <a href="https://www.tadiran-group.co.il/term-of-use/" target="_blank" rel="noopener">תנאי השימוש</a></span></label>
+          <label class="cb"><input type="checkbox" id="f2-mkt2">אני מאשר/ת קבלת עדכונים, הצעות והטבות במייל, במסרונים או בוואטסאפ מתדיראן וחברות הקשורות אליה</label>
+          <div class="f2-nav"><button class="tsw-btn tsw-btn-primary btn-lg f2-next" type="submit" disabled>להפעלת האחריות</button><button class="f2-prev" type="button">חזור לשלב הקודם</button></div>
+        </div>
+      </form>
+
+      <div class="f2-card f2-done" id="f2-done" hidden>
+        <div class="ring"><svg class="icon"><use href="#i-check-c"/></svg></div>
+        <h2>האחריות הופעלה בהצלחה!</h2>
+        <p>שלחנו אישור לכתובת המייל שהזנתם. אלה האחריויות שהופעלו:</p>
+        <ul class="sum" id="f2-sum"></ul>
+        <div class="acts"><button class="tsw-btn tsw-btn-primary" type="button" data-exit2>חזרה לשירות ואחריות</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="wrap-wide"><nav class="crumbs" aria-label="פירורי לחם"><a href="https://www.tadiran-group.co.il/">ראשי</a><span aria-hidden="true">/</span><span>שירות ואחריות</span></nav></div>
+    <div class="wrap">
+      <h1>שירות ואחריות</h1>
+      <div class="search" role="search">
+        <form class="search-field" id="search-form">
+          <label class="vh" for="q">חיפוש</label>
+          <input id="q" type="search" autocomplete="off" placeholder='נסו לחפש "הפעלת אחריות"' aria-controls="suggest" aria-expanded="false">
+          <button class="search-go" type="submit" aria-label="חיפוש"><svg class="icon"><use href="#i-send"/></svg></button>
+        </form>
+        <div class="suggest" id="suggest" role="listbox"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Contact channels (compact, so the topics peek in the first view) -->
+  <section class="channels" id="channels" aria-label="ערוצי יצירת קשר">
+    <div class="wrap">
+      <div class="contact-opts rv">
+        <h2>דברו איתנו, בדרך שהכי נוחה לכם</h2>
+        <span class="live" id="live-c"><span class="dot"></span><span id="live-c-t"></span></span>
+        <div class="tiles">
+          <a class="tile" href="https://api.whatsapp.com/send?phone=972541466491" target="_blank" rel="noopener"><span class="ti"><svg class="icon"><use href="#i-msg"/></svg></span><span><b>Whatsapp</b><br><span class="val num">054-1466-491</span></span><span class="act"><span>שליחת הודעה</span><svg class="icon"><use href="#i-chev"/></svg></span></a>
+          <button class="tile" type="button" data-modal="m-phones"><span class="ti"><svg class="icon"><use href="#i-phone"/></svg></span><span><b>טלפונים</b><br><span class="val num">1-700-700-946</span></span><span class="act"><span>כל מספרי המוקד</span><svg class="icon"><use href="#i-chev"/></svg></span></button>
+          <a class="tile" href="https://www.tadiran-group.co.il/contact-us/lets-connect/"><span class="ti"><svg class="icon"><use href="#i-mail"/></svg></span><span><b>כתבו לנו</b><br><span class="val">טופס פנייה באתר</span></span><span class="act"><span>להשארת פנייה</span><svg class="icon"><use href="#i-chev"/></svg></span></a>
+          <button class="tile" type="button" data-chat><span class="ti"><svg class="icon"><use href="#i-chat"/></svg></span><span><b>צ'ט עם נציג</b><br><span class="val">נציג אונליין באתר</span></span><span class="act"><span>פתיחת צ'אט</span><svg class="icon"><use href="#i-chev"/></svg></span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Topics -->
+  <section class="topics-sec" aria-label="נושאים נפוצים">
+    <div class="wrap-wide">
+      <div class="topics">
+        <div class="chips" aria-label="נושאים נפוצים">
+          <a class="chip" href="#tsw-warranty"><span class="ci"><svg class="icon"><use href="#i-shield"/></svg></span>הפעלת אחריות<svg class="icon go"><use href="#i-chev"/></svg></a>
+          <a class="chip" href="#tsw-user-guide"><span class="ci"><svg class="icon"><use href="#i-book"/></svg></span>הוראות שימוש<svg class="icon go"><use href="#i-chev"/></svg></a>
+          <a class="chip" href="https://www.tadiran-group.co.il/advisor/"><span class="ci"><svg class="icon"><use href="#i-headset"/></svg></span>ייעוץ בבחירת מזגן<svg class="icon go"><use href="#i-chev"/></svg></a>
+          <a class="chip" href="https://www.tadiran-group.co.il/warranty-table-info/"><span class="ci"><svg class="icon"><use href="#i-file"/></svg></span>טבלת אחריות<svg class="icon go"><use href="#i-chev"/></svg></a>
+          <a class="chip" href="#faq"><span class="ci"><svg class="icon"><use href="#i-help"/></svg></span>שאלות ותשובות<svg class="icon go"><use href="#i-chev"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Warranty activation -->
+  <section class="band" id="tsw-warranty" aria-labelledby="warranty-t">
+    <div class="wrap-wide">
+      <div class="band-in">
+        <div>
+          <h2 id="warranty-t">הפעלת אחריות דיגיטלית</h2>
+          <p class="tsw-lead">שלום, ברוכים הבאים לממשק הפעלת האחריות של תדיראן.</p>
+          <p class="ask">אנא בחרו סוג מוצר להפעלת אחריות:</p>
+          <div class="ptypes rv-stagger">
+            <button class="ptype" type="button" data-flow="ac"><span class="pi"><img src="assets/products/wall.png" width="325" height="150" alt=""></span><span class="pt">מזגן</span><svg class="icon go"><use href="#i-chev"/></svg></button>
+            <button class="ptype" type="button" data-flow="portable"><span class="pi"><img src="assets/products/portable.png" width="247" height="333" alt=""></span><span class="pt">מזגן נייד</span><svg class="icon go"><use href="#i-chev"/></svg></button>
+            <button class="ptype" type="button" data-flow="electric"><span class="pi"><img src="assets/products/electric.jpg" width="296" height="420" alt=""></span><span class="pt">מוצרי חשמל</span><svg class="icon go"><use href="#i-chev"/></svg></button>
+            <button class="ptype" type="button" data-flow="heatpump"><span class="pi"><img src="assets/products/heatpump.png" width="150" height="360" alt=""></span><span class="pt">משאבות חום</span><svg class="icon go"><use href="#i-chev"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Tadiran app: content from tadiran-group.co.il/download-app/, shown via the review-bar toggle -->
+  <section class="mytad" id="my-tadiran" aria-labelledby="mt-t">
+    <div class="wrap-wide">
+      <div class="mt rv">
+        <div class="mt-copy">
+          <p class="mt-eyebrow"><img src="assets/my-tadiran.png" width="21" height="20" alt="">MY TADIRAN</p>
+          <h2 id="mt-t">השירות של תדיראן, גם באפליקציה</h2>
+          <p class="tsw-lead">מתקדמים למערכת ההפעלה החכמה של MY TADIRAN: שליטה במזגנים, שירות VIP ותזכורות תחזוקה, בכל זמן ומכל מקום.</p>
+          <ul class="mt-feats rv-stagger">
+            <li><span class="fi"><svg class="icon"><use href="#i-headset"/></svg></span><span><b>שירות VIP 24/7</b><span class="t">תקלה בשתיים בלילה? פונים לשירות בטאץ' אחד.</span></span></li>
+            <li><span class="fi"><svg class="icon"><use href="#i-bell"/></svg></span><span><b>התראות ניקוי פילטרים</b><span class="t">המזגן מזכיר לכם מתי הגיע הזמן לנקות.</span></span></li>
+            <li><span class="fi"><svg class="icon"><use href="#i-sliders"/></svg></span><span><b>שליטה מרחוק</b><span class="t">מדליקים את המזגן כבר מהדרך הביתה.</span></span></li>
+            <li><span class="fi"><svg class="icon"><use href="#i-bolt"/></svg></span><span><b>דשבורד אנרגיה</b><span class="t">רואים כמה המזגן צורך ואיך הוא עובד.</span></span></li>
+          </ul>
+          <div class="mt-acts">
+            <a class="store" href="https://bit.ly/41J3Fs3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.62c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.75 2.2 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.67-2.14.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.31-.89-2.33-3.54zM14.17 6.15c.61-.74 1.02-1.76.91-2.79-.88.04-1.94.59-2.57 1.32-.56.65-1.06 1.7-.93 2.7.98.08 1.98-.5 2.59-1.23z"/></svg><span><small>הורדה מ-</small><b>App Store</b></span></a>
+            <a class="store" href="https://bit.ly/3QM1e1O" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 2.3 13.5 12l-9.9 9.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1z"/><path fill="#ffce00" d="m16.8 8.7-3.3 3.3 3.3 3.3 3.8-2.1c.9-.5.9-1.9 0-2.4z"/><path fill="#ff3a44" d="M13.5 12 3.6 21.7c.3.2.8.2 1.2 0l12-6.4z"/><path fill="#00f076" d="M3.6 2.3c.4-.2.8-.2 1.2 0l12 6.4-3.3 3.3z"/></svg><span><small>הורדה מ-</small><b>Google Play</b></span></a>
+            <a class="tlink" href="https://www.tadiran-group.co.il/download-app/">לכל היכולות של האפליקציה<svg class="icon"><use href="#i-chev"/></svg></a>
+          </div>
+          <p class="mt-note">מתאימה לכל מזגני תדיראן: עיליים, מיני מרכזיים ו-VRF. אפליקציה אחת שולטת בכולם.</p>
+        </div>
+        <div class="mt-art" aria-hidden="true"><img src="assets/mytadiran/black-screens.png" width="674" height="703" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. User guides -->
+  <section class="features" aria-label="הוראות שימוש">
+    <div class="wrap">
+      <article class="guide rv" id="tsw-user-guide">
+        <div class="tsw-media"><img src="assets/products/ducted.png" width="600" height="249" alt=""></div>
+        <div class="copy">
+          <h2>הוראות שימוש</h2>
+          <p class="tsw-lead">כאן תוכלו לבחור את דגם המזגן שלכם ולהוריד את הוראות השימוש לתפעול מהיר וקל שלו. אנחנו כאן לכל שאלה נוספת.</p>
+          <form id="guide-form">
+            <ol class="gsteps">
+              <li class="gstep active" id="gs-1">
+                <span class="num"><b>1</b><svg class="icon"><use href="#i-check-c"/></svg></span>
+                <div>
+                  <h3><label for="model">בחרו את דגם המזגן</label></h3>
+                  <p class="hint">שם הדגם מופיע על מדבקת הזיהוי של המזגן ובתעודת האחריות.</p>
+                  <div class="tsel"><select id="model" required><option value="">בחירת דגם</option><option>TADIRAN Super Slim</option><option>SUPER LOW INVERTER</option><option>AMCOR NEW 10 - 14</option><option>Tadiran multi 1_2 1_3 1_4 _1_5</option><option>TADIRAN SUPREME</option><option>SPACE R</option><option>TADIRAN JOY 10 - 35-3</option><option>Class</option><option>TADIRAN ALPHA X 10 - 35-3</option><option>TADIRAN SUPREME INVERTER NG</option><option>WIND-WAVE-SLIM-SILENT-INV</option></select></div>
+                </div>
+              </li>
+              <li class="gstep locked" id="gs-2">
+                <span class="num"><b>2</b><svg class="icon"><use href="#i-check-c"/></svg></span>
+                <div>
+                  <h3>הורידו את הוראות השימוש</h3>
+                  <p class="hint" id="gs-2-hint">הכפתור יופעל אחרי שתבחרו דגם.</p>
+                  <button class="tsw-btn tsw-btn-primary dl" type="submit" id="guide-btn" disabled><svg class="icon"><use href="#i-download"/></svg><span>להורדה</span></button>
+                </div>
+              </li>
+            </ol>
+          </form>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 7. Quick AC advice: leads into the existing /advisor/ flow -->
+  <section class="advisor" id="tsw-advisor" aria-labelledby="advisor-t">
+    <div class="wrap">
+      <div class="adv rv">
+        <div>
+          <h2 id="advisor-t">ייעוץ מהיר בבחירת מזגן</h2>
+          <p>אנחנו כאן כדי לסייע לך לקבל את ההחלטה המושכלת ביותר עבורך, באמצעות מספר שאלות קצרות.</p>
+          <div class="acts">
+            <a class="tsw-btn tsw-btn-primary" href="https://www.tadiran-group.co.il/advisor/">תמצאו לי מזגן<svg class="icon"><use href="#i-chev"/></svg></a>
+          </div>
+        </div>
+        <div class="adv-art"><div class="art"><img src="assets/advisor-room.svg" width="458" height="264" alt="איור של סלון עם מזגן עילי"><span class="breeze" aria-hidden="true"><i></i><i></i><i></i></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FAQ (content from tadiran-group.co.il/faqs/): categories > questions, nested accordion -->
+  <section class="faq" id="faq" aria-labelledby="faq-t">
+    <div class="wrap">
+      <div class="faq-head">
+        <h2 id="faq-t">שאלות נפוצות</h2>
+        <p>ריכזנו לכם שאלות נפוצות שבהן נתקלים נציגי השירות שלנו.</p>
+      </div>
+      <div class="faq-cats">
+        <div class="fcat open" id="faq-cat-1">
+          <h3><button class="fcat-q" type="button" aria-expanded="true" aria-controls="faq-cat-1-list">
+            <span class="fcat-ic"><svg class="icon"><use href="#i-sliders"/></svg></span>
+            <span class="fcat-t">תפעול המזגן<small>9 שאלות</small></span>
+            <span class="chev" aria-hidden="true"><svg class="icon"><use href="#i-down"/></svg></span>
+          </button></h3>
+          <div class="fcat-a" id="faq-cat-1-list" role="region"><div><div class="fcat-list">
+            <div class="qa" id="faq-1">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-1-a"><span>הפעלתי את המזגן במצב חימום ולא יוצא אוויר ביחידה הפנימית למרות שהמדחס פועל?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-1-a" role="region"><div><div class="qa-body"><p>בעת ההפעלה במצב חימום קיימת השהיית לפעולת המאוורר ביחידה הפנימית למשך כ- 20 שניות. במידה והוא אינו עובד גם לאחר משך זמן זה יש לבדוק האם המאוורר הפנימי תפוס/חסום או האם קיימת תקלה במנוע מאוורר פנימי לצורך כך הזמן שירות <a href="tel:1700700946" class="ltr">1-700-700-946</a>.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-2">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-2-a"><span>יש במזגן פיקוד דואלי (כפול), האם ניתן לכבות מן הפיקוד שעל הקיר ולהדליק בעזרת השלט?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-2-a" role="region"><div><div class="qa-body"><p>לא! הפיקוד שעל הקיר צריך להיות דולק על מנת שיהיה ניתן להפעיל את המזגן מהשלט ולכן, יש לכבות ולהדליק את המזגן מהשלט ולהשאיר את הפיקוד (שעל הקיר) דולק . (להבהרות נוספות יש לפנות אל המח' הטכנית באמצעות &quot;צור קשר&quot;).</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-3">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-3-a"><span>האם ניתן להפעיל מזגן מיני מרכזי בעזרת השלט מהסלון ומחדר השינה (לא במקביל)?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-3-a" role="region"><div><div class="qa-body"><p>כן! קיימת &quot;ערכה דו עינית&quot; אשר תאפשר הפעלת המזגן ושינוי מצבי פעולה משני חדרים שונים וזאת, בעזרת שלט אחד. הערכה מתחברת ליחידת הפיקוד והבקרה של המזגן (RT).</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-4">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-4-a"><span>האם ניתן להפעיל, באמצעות שלט רחוק אחד, מספר מזגנים הנמצאים באותו חלל?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-4-a" role="region"><div><div class="qa-body"><p>כן! ניתן להפעיל בעת ובעונה אחת, מזגנים מדגמים שונים הנמצאים באותו חלל , באמצעות שלט רחוק אחד. כדי לבטל אפשרות זאת יש לפנות לשירות <a href="tel:1700700946" class="ltr">1-700-700-946</a>.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-5">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-5-a"><span>מהי פונקציית ה I-FEEL?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-5-a" role="region"><div><div class="qa-body"><p>פונקציה זאת קיימת בשלט הרחוק והפעלתה מאפשרת שידור באופן קבוע למזגן והעברת הטמפרטורה המורגשת באזור בו נמצא השלט. המזגן יעבוד בתפוקה מלאה עד לקבלת הטמפרטורה הרצוייה באזור בו נמצא השלט. יש לוודא קשר עין ללא הפרעות בין השלט רחוק לבין המזגן.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-6">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-6-a"><span>הטמפרטורה באזור מגורי יורדת מתחת ל-0, האם יש דרך להגדיל את תפוקת החימום בימים אלו?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-6-a" role="region"><div><div class="qa-body"><p>מאחר ותפוקת המזגן תלויה בטמפרטורה אשר מחוץ לבית כמובן שבימים קרים מאד תפוקת המזגן יורדת. לכן, במזגנים המיני מרכזיים ישנה אפשרות חיבור לגופי חימום ושליטה עליהם. ניתן להוסיף בתעלה הראשית של מיזוג האוויר גופי חימום אשר הפעלתם תהיה ע&quot;פ הוראת הפיקוד של המזגן. מומלץ לפנות ליועץ מקצועי.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-7">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-7-a"><span>ברצוני לבצע שינוי בהתקנת המזגן- למי עלי לפנות?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-7-a" role="region"><div><div class="qa-body"><p>רצוי לפנות למתקין שביצע את ההתקנה או, לכל איש מקצוע אחר אשר מכיר את דגם המזגן שברשותך.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-8">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-8-a"><span>ברצוני לבצע העתקת המזגן שברשותי לדירה אחרת, למי עלי לפנות?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-8-a" role="region"><div><div class="qa-body"><p>ניתן לפנות בנושא למחלקת ההתקנות של החברה.<br> בעת הפניה יש לציין, בין היתר, את הפרטים הבאים:<br> 1. דגם המזגן.<br> 2. סדר גודל של נפח המיזוג החדש והאם דומה לקודם.<br> 3. מה המרחק הצפוי בין היחידה החיצונית לפנימית.</p> <p>על סמך הערכת נתונים אלה, ניתן יהיה לקבל הצעת מחיר ראשונית.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-9">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-9-a"><span>קניתי מזגן, אל מי לפנות בקשר להתקנה?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-9-a" role="region"><div><div class="qa-body"><p>לפנייך מס' אפשרויות מומלצות: &#8211; רצוי להזמין את ההתקנה במקום בו נקנה המזגן.<br> &#8211; רצוי לפנות למתקין שניתנה עליו חוות דעת טובה ומקצועית.<br> &#8211; רצוי לפנות למתקין הנושא תעודה המוכיחה שעבר הדרכות בתדיראן מוצרי צריכה.<br> &#8211; ניתן תמיד לפנות למחלקת ההתקנות בתדיראן מוצרי צריכה.</p></div></div></div>
+            </div>
+          </div></div></div>
+        </div>
+        <div class="fcat" id="faq-cat-2">
+          <h3><button class="fcat-q" type="button" aria-expanded="false" aria-controls="faq-cat-2-list">
+            <span class="fcat-ic"><svg class="icon"><use href="#i-drop"/></svg></span>
+            <span class="fcat-t">ניקוי ותחזוקה שוטפת - מיזוג נכון ויעיל<small>5 שאלות</small></span>
+            <span class="chev" aria-hidden="true"><svg class="icon"><use href="#i-down"/></svg></span>
+          </button></h3>
+          <div class="fcat-a" id="faq-cat-2-list" role="region"><div><div class="fcat-list">
+            <div class="qa" id="faq-10">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-10-a"><span>האם ישנו ניקוז של מים מיחידת העיבוי של המזגן, בחורף?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-10-a" role="region"><div><div class="qa-body"><p>בתקופת החורף, כאשר המזגן מופעל במצב חימום, היחידה החיצונית משמשת כמאדה שעליה מתעבים אדי המים המתנקזים החוצה ולשם כך, קיימת פיית ניקוז חיצוני בתחתית המזגן. במידה ורוצים לנקז את המים לנקודה כלשהי יש לחבר צינור שרשורי .</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-11">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-11-a"><span>מתי לנקות את מסנן האוויר?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-11-a" role="region"><div><div class="qa-body"><p>את המסנן יש לנקות כל 250 שעות עבודה או פחות, בהתאם לנתוני המבנה הממוזג. אי ניקוי המסנן יגרום לירידה בתפוקה ועליה בלחץ על המפוח. כל 250 שעות עבודה נדלקת נורת &quot;FILTER&quot; או על מנת לכבות אותה לאחר ניקוי המסנן, יש ללחוץ על לחיץ ה- OFF או RESET.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-12">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-12-a"><span>איך לנקות את המסנן?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-12-a" role="region"><div><div class="qa-body"><p>רצוי להעביר את המסנן תחת מים זורמים פושרים ולוודא שכל הלכלוך נשטף. אח&quot;כ יש לתת למסנן להתייבש באוויר אך לא בשמש! במקרים קשים, ניתן להשתמש בחומרי ניקוי קלים ולהשרות בהם את המסנן. חובה לשטוף אח&quot;כ את המסנן במים זורמים.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-13">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-13-a"><span>איך לשמור על תקינות היחידה החיצונית (מעבה)?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-13-a" role="region"><div><div class="qa-body"><p>יש להקפיד כי הפתחים של היחידה החיצונית לא יהיו חסומים במרחק של לפחות 15 ס&quot;מ מהקיר ו- 60 ס&quot;מ מלפנים (כפוף להנחיות התקנה של המזגן). אין לשים על היחידה חפצים כמו מטליות או בד העלולים להחליק לתוכה. כמו כן אין לשים על היחידה מכלים עם נוזלים העלולים להישפך לתוכה. היחידה עמידה נגד גשם אך לא נגד שיטפון.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-14">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-14-a"><span>איך לשמור על תקינות היחידה הפנימית (מאדה)?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-14-a" role="region"><div><div class="qa-body"><p>היחידה הפנימית תוכננה כך שתהיה נעימה לעין ופונקציונלית. יש למנוע הצטברות אבק ומשקעים אחרים על היחידה. משקעים אלה עלולים לפגוע במראה החיצוני שלה ולהישאב לתוך המסנן. יש לנקות במטלית אבק יבשה או טבולה בחומרי ניקוי קלים, למניעת פגיעה ביחידה. יש להימנע מפגיעה פיסית ביחידת הפיקוד או בעינית.</p></div></div></div>
+            </div>
+          </div></div></div>
+        </div>
+        <div class="fcat" id="faq-cat-3">
+          <h3><button class="fcat-q" type="button" aria-expanded="false" aria-controls="faq-cat-3-list">
+            <span class="fcat-ic"><svg class="icon"><use href="#i-tool"/></svg></span>
+            <span class="fcat-t">פתרון תקלות<small>9 שאלות</small></span>
+            <span class="chev" aria-hidden="true"><svg class="icon"><use href="#i-down"/></svg></span>
+          </button></h3>
+          <div class="fcat-a" id="faq-cat-3-list" role="region"><div><div class="fcat-list">
+            <div class="qa" id="faq-15">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-15-a"><span>המזגן אינו פועל ונורית STAND-BY לא דולקת?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-15-a" role="region"><div><div class="qa-body"><p>יש לבדוק: אספקת חשמל למזגן, חיבור לרשת החשמל, מצב המפסקים האוטומטיים וכד'. אם הכל נראה תקין &#8211; נא לפנות לשירות <a href="tel:1700700946" class="ltr">1-700-700-946</a> (במזגני חלון אין נורית Stand By).</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-16">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-16-a"><span>המזגן אינו פועל ונורית STAND-BY דולקת?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-16-a" role="region"><div><div class="qa-body"><p>לא בוצעה או לא נקלטה פקודת הפעלה. יש לבדוק במקביל הפעלה ידנית מלוח הפיקוד (שעל המזגן) והפעלה מהשלט. אם ההפעלה הידנית מהפיקוד נכשלה, נא לפנות לשירות. אם ההפעלה מהשלט נכשלה, יש לבדוק את סוללות השלט. אם הן תקינות, נא לפנות לשירות <a href="tel:1700700946" class="ltr">1-700-700-946</a>.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-17">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-17-a"><span>המזגן פועל אבל הביצועים שלו ירודים?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-17-a" role="region"><div><div class="qa-body"><p>יש לבדוק האם מסנני האוויר מלוכלכים או חסומים. במידה וכן יש לנקותם! אפשרות אחרת היא שיש דליפת גז (העלולה לגרום גם לקפיאת הסוללה הפנימית במצב קירור) במקרה כזה יש להזמין שירות <a href="tel:1700700946" class="ltr">1-700-700-946</a>.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-18">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-18-a"><span>המזגן במצב חימום, המדחס פועל אך המאווררים אינם פועלים וגם נורית COND AIR מהבהבת?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-18-a" role="region"><div><div class="qa-body"><p>המזגן נמצא בפעולת הפשרה ( De-Iceing ) יש להמתין כ- 10 דקות לסיום ההפשרה.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-19">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-19-a"><span>המזגן אינו פועל או לא מגיב נכון למוגדר בשלט?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-19-a" role="region"><div><div class="qa-body"><p>&#8211; קיימות הפרעות אלקטרוניות המשבשות את פעולת השלט-רחוק. שלוף את התקע משקע החשמל וחבר אותו מחדש.</p> <p> &#8211; האם השלט-רחוק נמצא בטווח השידור והקליטה של המזגן? האם יש עצמים החוסמים את קו הראייה בין השלט-רחוק לבין המזגן?</p> <p> &#8211; בדוק את הסוללות שבשלט-רחוק, החלף אותן אם הן חלשות או ריקות.</p> <p> -בדוק אם השלט-רחוק שלם ותקין והאם השלט מקודד בצורה תקינה.</p> <p> &#8211; עינית התצוגה ביחידה אינה תקינה, יש לפנות למחלקת השירות בטלפון <a href="tel:1700700946" class="ltr">1-700-700-946</a></p></div></div></div>
+            </div>
+            <div class="qa" id="faq-20">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-20-a"><span>השלט של הטלויזיה משבש/ מכבה את המזגן, מה לעשות?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-20-a" role="region"><div><div class="qa-body"><p>מקרה נדיר ביותר. נא לפנות לשירות- <a href="tel:1700700946" class="ltr">1-700-700-946</a>. נציין כי, מזגני תדיראן עובדים בתחום תדרים, המאושר ע&quot;י מכון התקנים.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-21">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-21-a"><span>אל מי ניתן לפנות כשיש בעיה בהתקנה?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-21-a" role="region"><div><div class="qa-body"><p>האחריות להתקנה הינה של מבצע ההתקנה בלבד ולכן: אם ההתקנה בוצעה ישירות ע&quot;י תדיראן יש לפנות למח' ההתקנות שלנו. אם ההתקנה בוצעה ע&quot;י מתקין פרטי, יש לפנות אליו ישירות.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-22">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-22-a"><span>נוזלים מים מהמזגן בתוך הבית, מה עושים?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-22-a" role="region"><div><div class="qa-body"><p>יש להפסיק מיד את עבודת המזגן. נזילה שאינה תוצאה של התקנה לקויה יכולה לנבוע משינוי מיקום של צינור הניקוז, או חסימה שלו כתוצאה מלכלוך או קיפול. יש לאפשר זרימה חופשית של המים בצינור הניקוז כלפי מטה ולוודא שאין בועות אוויר החוסמות את היציאה. אם התופעה ממשיכה יש לפנות לשירות.</p></div></div></div>
+            </div>
+            <div class="qa" id="faq-23">
+              <h4><button class="qa-q" type="button" aria-expanded="false" aria-controls="faq-23-a"><span>נוזלים מים מהמזגן החוצה, מה עושים?</span><span class="plus" aria-hidden="true"></span></button></h4>
+              <div class="qa-a" id="faq-23-a" role="region"><div><div class="qa-body"><p>מים היוצאים מפיית צינור הניקוז אינם מהווים בעיה. כמות המים היוצאת מהצינור תלויה מאד בלחות של האוויר והיא תוצאה של התעבות. רצוי לדאוג לכך שיציאת הצינור תהיה במקום בו המים היוצאים לא יהיו למטרד הסביבה.</p></div></div></div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+      <p class="faq-more">לא מצאתם תשובה לשאלה שלכם? <a href="#channels">צרו איתנו קשר</a></p>
+    </div>
+  </section>
+
+  <!-- 9. Link directory -->
+  <section class="directory" aria-labelledby="dir-t">
+    <div class="wrap">
+      <h2 id="dir-t">מסמכים ומידע שימושי</h2>
+      <div class="dir-cols rv-stagger">
+        <div>
+          <h3>אחריות</h3>
+          <ul>
+            <li><a href="https://www.tadiran-group.co.il/warranty-table-info/">טבלת אחריות</a></li>
+            <li><a href="https://www.tadiran-group.co.il/%d7%aa%d7%a7%d7%a0%d7%95%d7%9f-%d7%94%d7%a8%d7%97%d7%91%d7%aa-%d7%90%d7%97%d7%a8%d7%99%d7%95%d7%aa-%d7%a2%d7%9c-%d7%9e%d7%96%d7%92%d7%a0%d7%99%d7%9d/">תקנון אחריות מורחבת עדכני</a></li>
+            <li><a href="https://www.tadiran-group.co.il/previous-warranty-tables/">טבלאות אחריות היסטוריות</a></li>
+            <li><a href="https://www.tadiran-group.co.il/rules/">ארכיון תקנונים ישנים</a></li>
+            <li><a href="https://www.tadiran-group.co.il/refrigerator-extended-warranty-regulations/">תקנון אחריות מוגבלת על מקררים</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>שירות</h3>
+          <ul>
+            <li><a href="https://www.tadiran-group.co.il/faqs/">תפעול המזגן ותחזוקה שוטפת</a></li>
+            <li><a href="https://www.tadiran-group.co.il/cancel-order/">ביטול עסקה</a></li>
+            <li><a href="https://www.tadiran-group.co.il/%d7%90%d7%99%d7%a1%d7%95%d7%a3-%d7%9e%d7%95%d7%a6%d7%a8-%d7%99%d7%a9%d7%9f-%d7%9e%d7%91%d7%99%d7%aa-%d7%94%d7%9c%d7%a7%d7%95%d7%97/">איסוף מוצר ישן מבית הלקוח</a></li>
+            <li><a href="https://www.tadiran-group.co.il/%d7%a0%d7%a7%d7%95%d7%93%d7%aa-%d7%90%d7%99%d7%a1%d7%95%d7%a3-%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d-%d7%a7%d7%98%d7%a0%d7%99%d7%9d/">נקודות איסוף מוצרים קטנים</a></li>
+            <li><a href="https://www.tadiran-group.co.il/%D7%94%D7%AA%D7%A7%D7%A0%D7%AA-%D7%9E%D7%9B%D7%95%D7%A0%D7%AA-%D7%9B%D7%91%D7%99%D7%A1%D7%94-%D7%A7%D7%A8%D7%99%D7%A1%D7%98%D7%9C-%D7%A4%D7%AA%D7%97-%D7%A2%D7%9C%D7%99%D7%95%D7%9F/">התקנת מכונת כביסה קריסטל</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>מידע נוסף</h3>
+          <ul>
+            <li><a href="https://www.tadiran-group.co.il/store-locator/">משווקים מורשים – מיזוג</a></li>
+            <li><a href="https://www.tadiran-group.co.il/store-locator-el/">משווקים מורשים – מוצרי חשמל</a></li>
+            <li><a href="https://www.tadiran-group.co.il/%d7%94%d7%a1%d7%93%d7%a8%d7%99-%d7%a0%d7%92%d7%99%d7%a9%d7%95%d7%aa/">הסדרי נגישות</a></li>
+            <li><a href="https://www.tadiran-group.co.il/privacy-policy/">מדיניות פרטיות</a></li>
+            <li><a href="https://www.tadiran-group.co.il/term-of-use/">תנאי שימוש</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Modal: phones (content as on the current page) -->
+<div class="tsw-modal" id="m-phones" role="dialog" aria-modal="true" aria-labelledby="m-phones-t">
+  <div class="sheet">
+    <button class="tsw-close" type="button" data-close aria-label="סגירה"><svg class="icon"><use href="#i-x"/></svg></button>
+    <h2 id="m-phones-t">מוקד שירות מיזוג אויר</h2>
+    <ul class="info">
+      <li><span class="ic"><svg class="icon"><use href="#i-phone"/></svg></span><div><b>מוקד שירות</b><a class="ltr" href="tel:1700700946">1-700-700-946</a></div></li>
+      <li><span class="ic"><svg class="icon"><use href="#i-msg"/></svg></span><div><b>Whatsapp</b><a class="ltr" href="https://api.whatsapp.com/send?phone=972541466491">054-1466-491</a></div></li>
+      <li><span class="ic"><svg class="icon"><use href="#i-sms"/></svg></span><div><b>לשלוח SMS למספר</b><a class="ltr" href="sms:0502411412">050-2411412</a></div></li>
+      <li><span class="ic"><svg class="icon"><use href="#i-pin"/></svg></span><div><b>כתובת</b><a href="https://ul.waze.com/ul?place=ChIJV5oQCXzdOkcR4ngjARfFI0I&navigate=yes" target="_blank" rel="noopener">הלהב 7, אזור תעשיה, חולון</a></div></li>
+      <li><span class="ic"><svg class="icon"><use href="#i-mail"/></svg></span><div><b>מייל שירות</b><a href="mailto:service-tadiran@tadiran-group.co.il">service-tadiran@tadiran-group.co.il</a></div></li>
+    </ul>
+    <div class="hours"><b>זמני עבודה שירות לקוחות</b>בימי א' – ה' בין השעות 08:00 – 16:00<br>יום ו' בין השעות 08:00 – 12:00</div>
+  </div>
+</div>
+
+<!-- Modal: confirm leaving the warranty flow -->
+<div class="tsw-modal" id="m-leave" role="dialog" aria-modal="true" aria-labelledby="m-leave-t">
+  <div class="sheet">
+    <h2 id="m-leave-t">לצאת מהפעלת האחריות?</h2>
+    <p class="intro">הפרטים שמילאתם לא יישמרו.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+      <button class="tsw-btn tsw-btn-primary" type="button" data-close>להמשיך למלא</button>
+      <button class="tsw-btn tsw-btn-outline" type="button" id="leave-yes">יציאה</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: where is the serial number -->
+<div class="tsw-modal" id="m-serial" role="dialog" aria-modal="true" aria-labelledby="m-serial-t">
+  <div class="sheet wide">
+    <button class="tsw-close" type="button" data-close aria-label="סגירה"><svg class="icon"><use href="#i-x"/></svg></button>
+    <h2 id="m-serial-t">היכן נמצא המספר הסיריאלי?</h2>
+    <p class="intro">המספר הסיריאלי מופיע על מדבקת הברקוד שבתעודת האחריות, מתחת לשם הדגם.</p>
+    <img class="serial-img" src="assets/photos/serial-help.jpg" width="1000" height="620" alt="תעודת אחריות למזגן עם סימון המספר הסיריאלי על מדבקת הברקוד">
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+</div>
+<!-- ======== /DELIVERABLE ======== -->
+
+<!-- PREVIEW ONLY: mock of the Tadiran site footer -->
+<footer class="foot">
+  <div class="wrap-wide foot-in">
+    <nav aria-label="קישורים בתחתית">
+      <a href="https://www.tadiran-group.co.il/about/">אודות</a>
+      <a href="https://www.tadiran-group.co.il/investors/">קשרי משקיעים</a>
+      <a href="https://www.tadiran-group.co.il/website-map/">מפת אתר</a>
+      <a href="https://www.tadiran-group.co.il/contact-us/">הפעלת אחריות דיגיטלית</a>
+      <a href="https://www.tadiran-group.co.il/privacy-policy-iot/">מדיניות פרטיות IoT</a>
+      <a href="https://www.tadiran-group.co.il/terms-of-use-iot/">תנאי שימוש IoT</a>
+    </nav>
+    <div class="foot-brand"><img src="assets/logo-sadaf.svg" width="29" height="29" alt=""><b>TADIRAN</b></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="preview/preview.js"></script>
+</body>
+</html>

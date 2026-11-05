@@ -1,0 +1,84 @@
+/* PREVIEW ONLY (client review): mock Tadiran header/footer and the review bar. Not part of the deliverable. */
+:root{
+  --primary:#2194be;
+  --primary-hover:#3a8bb0;
+  --primary-press:#357896;
+  --blue-100:#e9f5f9;
+  --blue-200:#d3eaf2;
+  --blue-300:#a6d4e5;
+  --blue-400:#7abfd8;
+  --blue-500:#4ea9cb;
+  --blue-600:#0071a1;
+  --blue-700:#00577c;
+  --black:#1a1a1a;
+  --secondary-black:#595959;
+  --grey-100:#737373;
+  --grey-200:#c2c2c2;
+  --grey-300:#d8d8d8;
+  --grey-400:#ededed;
+  --white:#ffffff;
+  --white-bg:#f9f9f9;
+  --red:#ff4c4c;
+  --green:#1a8f60;
+
+  --tile:#f5f6f7;
+  --radius-md:18px;
+  --radius-lg:28px;
+  --pill:999px;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --font:'Open Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:var(--font);background:#fff;}
+.gh .icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;}
+.gh a,.foot a{color:inherit;text-decoration:none;}
+.gh img,.foot img{display:block;}
+.gh button{border:0;background:none;padding:0;}
+.foot nav a:hover{text-decoration:underline !important;}
+/* ---------- Tadiran global header (DS) ---------- */
+.gh{position:sticky;top:0;z-index:60;background:#fff;height:66px;box-shadow:0 1px 7px rgba(0,0,0,.08);}
+.gh-in{height:100%;max-width:1872px;margin-inline:auto;padding-inline:24px;display:flex;align-items:center;gap:32px;}
+.gh-logo img{width:29px;height:29px;}
+.gh-nav{display:flex;gap:12px;}
+.gh-nav a{display:flex;align-items:center;gap:10px;padding:10px;font-size:16px;font-weight:600;letter-spacing:-.21px;}
+.gh-nav a:hover{color:var(--primary);}
+.gh-nav img{width:21px;height:20px;object-fit:cover;}
+.gh-tools{margin-inline-start:auto;display:flex;align-items:center;gap:17px;}
+.gh-icon{background:none;border:0;padding:0;cursor:pointer;}
+.gh-icon img{width:24px;height:24px;}
+.gh-pill{display:inline-flex;align-items:center;height:40px;padding:0 24px;border-radius:50px;background:var(--primary);color:#fff;font-size:14px;font-weight:600;}
+.gh-burger{display:none;background:none;border:0;padding:4px;cursor:pointer;}
+/* ---------- Footer ---------- */
+.foot{background:#000;color:#fff;padding:48px 0 36px;font-size:14px;}
+.foot-in{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;align-items:flex-start;}
+.foot-brand{display:flex;flex-direction:column;align-items:center;gap:10px;}
+.foot-brand img{width:56px;height:56px;filter:brightness(0) invert(1);}
+.foot-brand b{letter-spacing:.2em;font-size:18px;}
+.foot nav{display:grid;grid-template-columns:repeat(3,auto);gap:8px 48px;}
+.foot nav a{color:#ddd;}
+.foot nav a:hover{color:#fff;text-decoration:underline;}
+/* ---------- Presentation bar (client review: device + flow version) ---------- */
+.pbar{position:fixed;inset-inline:0;top:0;z-index:1000;height:56px;display:flex;align-items:center;gap:16px;padding:0 20px;background:#111;color:#fff;font-size:14px;box-shadow:0 2px 12px rgba(0,0,0,.3);}
+.pbar .ttl{font-weight:700;white-space:nowrap;}
+.pbar .ttl small{font-weight:400;opacity:.6;margin-inline-start:8px;}
+.pseg{display:inline-flex;padding:3px;border-radius:999px;background:rgba(255,255,255,.1);}
+.pseg button{height:32px;padding:0 16px;border:0;border-radius:999px;background:none;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:background .2s,color .2s;}
+.pseg button svg{width:16px;height:16px;}
+.pseg button[aria-pressed="true"]{background:#fff;color:#111;}
+.pbar .grp{display:flex;align-items:center;gap:8px;}
+.pbar .grp span{opacity:.6;font-size:12.5px;}
+.pbar .sp{margin-inline-start:auto;}
+.pstage{position:fixed;inset:56px 0 0 0;background:#e9ecef;overflow:auto;display:flex;justify-content:center;}
+.pstage iframe{display:block;border:0;background:#fff;width:100%;height:100%;}
+.pstage.mobile{padding:24px 0;}
+.pstage.mobile iframe{width:390px;height:844px;flex:none;border-radius:36px;box-shadow:0 0 0 10px #1a1a1a,0 30px 60px rgba(0,0,0,.35);}
+body.shell > *:not(.pbar):not(.pstage){display:none !important;}
+body.shell{overflow:hidden;}
+@media (max-width:1200px){
+  .gh-nav a:not(.keep){display:none;}
+}
+@media (max-width:640px){
+  .gh-nav,.gh-pill{display:none;}
+  .gh-burger{display:block;}
+  .foot nav{grid-template-columns:1fr 1fr;gap:8px 24px;}
+}
